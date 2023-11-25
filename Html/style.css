@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    background-color: #000;
+
+   
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 70px;
+    background-color: #000;
+}
+#logo{
+    width: 70px;
+    height: 70px;
+}
+nav{
+    width: 60%
+}
+ul{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+li{
+    list-style: none;
+    color:aliceblue;
+    font-size: 18px;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    transition: .5;
+    cursor: pointer;
+}
+li:hover{
+    color:chocolate;
+}
+
+/*banner*/
+#banner{
+    width: 100%;
+    height: 500px;   
+}
+/*trailer*/
+#trailer-container{
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+  
+   
+}
+.content{
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.trailer{
+    width: 50%;
+    margin-left: 50%;
+}
+#sinopse{
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column; 
+    margin-left: 30px;
+    
+}
+.description{
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    font-size: 18px;
+    color: #fff;
+    width: 70%;
+    margin-top: 80px;
+    margin-right: 140px;
+}
+.button{
+    background-color: #fff;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+    padding: 1px 5px;
+    transition: .5;
+    font-size: 14px;  
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    display: flex;
+    justify-content: center;
+    outline: none;
+    margin-bottom: 90px;
+    margin-right: 160px;
+    width: 20%;
+    margin-left: 100px;
+}
+.button:hover{
+    background-color: #000;
+    color: chocolate;
+}
+
+/*cards*/
+.container-card{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+#card{
+    color: aliceblue;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: 20px;
+    column-gap: 40px;
+    width: 90%
+}
+
+.cards{
+    width: 100%;
+    height: 600px;
+    background-position: center;
+    background-size: cover;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 1s;
+    display: flex;
+    flex-direction: column-reverse;
+    padding-left: 10px;
+    color: aliceblue;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    font-size: 17px;
+}
+.cards:hover{
+    transform: scale(1.03);
+}
+.banner1{
+    background-image: url('https://media.glamour.com/photos/5f84aabda8de7ca88085a3d7/1:1/w_993,h_993,c_limit/Jensen%20Ackles.jpg');
+}
+
+.banner2{
+    background-image: url('./img/sam.jpg')
+}
+
+.banner3{
+    background-image: url('https://article-imgs.scribdassets.com/9n4ri4q874b80zwr/images/fileXT8H7MJZ.jpg');
+}
+
+.banner4{
+    background-image: url('./img/crowley.jpg');
+}
+
+/*footer*/
+
+#footer{
+    width: 100%;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    margin-top: 60px;
+}    
+
+span{
+    color: aliceblue;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    font-size: 17px;
+}
+
+.logo1{
+    width: 60px;
+    height: 60px;
+}
+
+.footer-navagation{
+    display: none;
+}
+.footer-list{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+@media(max-width:768px){
+    .footer-navagation{
+        display: block;
+    }
+    
+    nav{
+        display: none;
+    }
+
+    #banner{
+      background-position: 40%;      
+    }
+
+    #trailer-container{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 400px;
+    }
+
+    .content{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .trailer{
+        width: 100%;
+        margin-right: 55%;
+        margin-top: 15px;
+    }
+
+    #sinopse{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 95%;
+         
+    }
+
+    .description{
+        width: 100%;
+       
+        
+    }
+    .button{
+        width: 30%;
+        margin-top: 20px;
+    }
+    #card{
+        grid-template-columns: 1fr;
+        margin-top: 150px;
+    }
+}

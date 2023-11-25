@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    color:aliceblue;
+}
+
+header{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    background-color: #000;
+    height:70px;
+    align-items: center;
+    
+}
+
+nav{
+    width: 60%;
+    
+}
+ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+li{
+    color: aliceblue;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    font-size: 18px;
+    transition: .5;
+    cursor: pointer; 
+}
+
+li:hover{
+    color: chocolate;
+}
+
+img{
+    width: 70px;
+    height: 70px;
+}
+
+#container-contato{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contato{
+    color: aliceblue;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    transition: .5;
+    cursor: pointer;
+}
+.contato:hover{
+    color: chocolate;
+    border: 1px solid white;
+    border-radius: 15px;
+}
+
+#container{
+    background-image: url('./img/banner-contato.png');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 590px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    
+}
+.tittle{
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+}
+input[type=text], textarea{
+    border-radius: 5px;
+    border: 2px solid #66c2ff;
+    margin-top: 5px;
+    box-sizing: border-box;
+    color:black;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    font-size: 17px;
+}
+#button{
+    margin-left: 55px;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: 2px solid #66c2ff;
+    color: #000;
+    cursor: pointer;
+    transition: 1s;
+}
+#button:hover{
+    transform: scale(1.04);
+}
+
+#footer{
+    background-color: #000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 200px;  
+}
+#logo1{
+    margin-top: 35px;
+}
+.footer-navagation{
+    display: none;
+}
+.footer-list{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
